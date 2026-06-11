@@ -12,8 +12,8 @@
 .subtitle {
   display: inline-block;
   font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--color-gold);
+  font-weight: 600;
+  color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: var(--space-3);
@@ -23,7 +23,7 @@
   font-family: var(--font-heading);
   font-size: var(--text-3xl);
   margin-bottom: var(--space-4);
-  background: linear-gradient(135deg, var(--color-text-primary), var(--color-gold-light));
+  background: linear-gradient(135deg, #ffffff 30%, var(--color-accent-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
