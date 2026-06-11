@@ -12,7 +12,7 @@
   transform: translateX(-50%);
   width: 800px;
   height: 400px;
-  background: radial-gradient(ellipse, rgba(212, 165, 116, 0.06), transparent 70%);
+  background: radial-gradient(ellipse, rgba(67, 97, 238, 0.05), transparent 70%);
   pointer-events: none;
 }
 
@@ -30,8 +30,8 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
-  color: var(--color-bg-primary);
+  background: var(--color-accent);
+  color: #ffffff;
   border-radius: var(--radius-lg);
 }
 

@@ -68,7 +68,7 @@ CRITICAL INSTRUCTIONS:
 
 export async function generateContent(prompt: string, systemInstruction?: string) {
   const result = await ai.models.generateContent({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-3.5-flash',
     contents: prompt,
     config: {
       systemInstruction: systemInstruction || 'You are a helpful AI writing assistant for Christian authors.',
