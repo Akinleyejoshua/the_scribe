@@ -138,13 +138,17 @@ export default function InterviewPage() {
       return;
     }
     // Resume from where they left off
-    if (currentAuthor.interviewStep > 0 && currentAuthor.interviewStep < 7) {
-      setCurrentStep(currentAuthor.interviewStep);
+    if (currentAuthor.interviewStep > 0 && currentAuthor.interviewStep < 7 && currentStep !== currentAuthor.interviewStep) {
+      const step = currentAuthor.interviewStep;
+      const timer = setTimeout(() => {
+        setCurrentStep(step);
+      }, 0);
+      return () => clearTimeout(timer);
     }
     if (currentAuthor.interviewCompleted) {
       router.push('/dashboard');
     }
-  }, [currentAuthor, router]);
+  }, [currentAuthor, currentStep, router]);
 
   if (!currentAuthor) return null;
 

@@ -172,7 +172,7 @@ ${currentManuscriptContext ? `CURRENT MANUSCRIPT CONTEXT:\n${currentManuscriptCo
   }));
 
   const result = await ai.models.generateContentStream({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-3.5-flash',
     contents: formattedContents,
     config: {
       systemInstruction: systemPrompt,

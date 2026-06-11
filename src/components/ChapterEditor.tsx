@@ -25,10 +25,11 @@ export default function ChapterEditor({
   const [saved, setSaved] = useState(true);
 
   // Update content when chapter changes
-  const prevChapterId = useState(chapter?.number)[0];
-  if (chapter && chapter.number !== prevChapterId) {
+  const [prevChapterNumber, setPrevChapterNumber] = useState(chapter?.number);
+  if (chapter && chapter.number !== prevChapterNumber) {
     setContent(chapter.content || '');
     setSaved(true);
+    setPrevChapterNumber(chapter.number);
   }
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
